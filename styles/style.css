@@ -1,0 +1,70 @@
+*{
+  font-family: 'Rubik', sans-serif;
+}
+
+h1{
+  color: #3d405b;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quiz-area{
+  background: url('../images/paws.svg')  center no-repeat;
+  background-size: 85%;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 600px;
+}
+
+.card{
+  align-items: center;
+  border-radius: 10px;
+  color: #f4f1de;
+  display: flex;
+  height: 170px;
+  justify-content: center;
+  margin: 5px 5px;
+  position: relative;
+  width: 170px;
+}
+
+.card{
+  transition: 2s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.question{
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.front,
+.back{
+  backface-visibility:hidden;
+  border-radius: 10px;
+  color: #f4f1de;
+  height: 160px;
+  position: absolute;
+  width: 160px;
+}
+
+.front{
+  background-color: #3d405b; 
+}
+
+.back{
+  background-color: #6b4b68;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
